@@ -1,0 +1,70 @@
+#experience {
+  background: var(--primary-color);
+  padding-bottom: 60px;
+  scroll-margin-top: 7em;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.experience-img {
+  max-width: 500px;
+  height: 100%;
+  padding-bottom: 8px;
+}
+
+.experience-years {
+  font: 500 1.5rem/1.1 "Prompt", sans-serif;
+  color: #696969;
+  letter-spacing: 2px;
+}
+.experience-years span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .experience-img {
+    margin-top: 40px;
+  }
+  .experience-years span {
+    font-size: 1.4rem;
+  }
+
+  .experience-years {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-img {
+    max-width: 400px;
+  }
+  .experience-years span {
+    font-size: 1.2rem;
+  }
+
+  .experience-years {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .experience-img {
+    max-width: 320px;
+  }
+
+  .experience-years span {
+    font-size: 1rem;
+  }
+
+  .experience-years {
+    font-size: 0.9rem;
+  }
+}

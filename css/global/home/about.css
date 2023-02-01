@@ -1,0 +1,137 @@
+#about-me {
+  background: #212529;
+  box-shadow: inset 0 -120px var(--primary-color);
+  scroll-margin-top: 4em;
+}
+
+.about-me-info {
+  max-width: 1200px;
+  padding: 80px 40px 80px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.about-me-content .about-me-title {
+  font: 700 4rem/1.4 "Poppins", sans-serif;
+  color: var(--tertiary-color);
+}
+.about-me-content .about-me-title span {
+  color: var(--details-color);
+}
+
+.about-me-content .about-me-paragraph {
+  color: var(--primary-text-color);
+  font: 600 1.7rem/1.4 "Poppins", sans-serif;
+  max-width: 100%;
+  letter-spacing: 1px;
+  margin-bottom: 70px;
+}
+
+.about-me-content .about-me-paragraph span {
+  color: var(--tertiary-color);
+}
+
+.about-me-content .about-me-paragraph a {
+  color: var(--details-color);
+}
+
+.about-me-content .about-me-paragraph:first-of-type {
+  margin-bottom: 80px;
+}
+
+.about-me-img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+@media (max-width: 1500px) {
+  .about-me-img {
+    object-fit: cover;
+  }
+  .about-me-content .about-me-paragraph:last-child {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-me-info {
+    grid-template-columns: 1fr;
+    padding: 60px 30px 60px 30px;
+  }
+
+  #about-me {
+    padding: 0;
+  }
+
+  .about-me-content {
+    padding: 40px 60px 40px 60px;
+  }
+
+  .about-me-content .about-me-title {
+    font-size: 3rem;
+  }
+
+  .about-me-content .about-me-paragraph {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+
+  .about-me-content .about-me-paragraph:last-child {
+    padding-bottom: 0;
+  }
+
+  .me-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me-img {
+    padding-left: 0;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-me-info {
+    padding: 20px 20px 20px 20px;
+  }
+  .about-me-content {
+    padding: 40px 60px 10px 60px;
+  }
+
+  .about-me-content .about-me-title {
+    font-size: 2.8rem;
+  }
+
+  .about-me-content .about-me-paragraph {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-me-info {
+    padding: 40px 15px 40px 15px;
+  }
+  .about-me-content {
+    padding: 20px 30px 20px 30px;
+  }
+
+  .about-me-content .about-me-title {
+    font-size: 2.4rem;
+  }
+
+  .about-me-content .about-me-paragraph {
+    font-size: 1rem;
+  }
+
+  .about-me-content .about-me-paragraph:first-of-type {
+    margin-bottom: 40px;
+  }
+}

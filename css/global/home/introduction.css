@@ -1,0 +1,118 @@
+.introduction-bg {
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introduction-content {
+  align-self: center;
+  padding-top: 330px;
+  height: 100vh;
+}
+
+.footer-social-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.footer-social-medias li i {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.introduction-content .my-name {
+  font: 600 3rem/1.4 "Poppins", sans-serif;
+  margin-bottom: -2px;
+  letter-spacing: 6px;
+  color: var(--secondary-text-color);
+}
+.introduction-content .my-name span {
+  color: var(--details-color);
+}
+
+.introduction-content .my-role {
+  font: 400 1.4rem/1 "Prompt", sans-serif;
+  color: var(--secondary-text-color);
+}
+
+.hide {
+  display: none;
+}
+
+.arrow-img {
+  max-width: 140px;
+  padding: 40px;
+  animation: MoveUpDown 1.7s linear infinite;
+  position: absolute;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  bottom: 0;
+  color: var(--secondary-text-color);
+}
+
+.arrow-img:hover {
+  animation: none;
+  cursor: pointer;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introduction-content .my-name {
+    font-size: 2.5rem;
+  }
+
+  .introduction-content .my-role {
+    font-size: 1.2rem;
+  }
+
+  .arrow-img {
+    width: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .introduction-content .my-name {
+    font-size: 2rem;
+  }
+
+  .introduction-content .my-role {
+    font-size: 1rem;
+  }
+
+  .arrow-img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .introduction-content .my-name {
+    font-size: 1.5rem;
+  }
+
+  .introduction-content .my-role {
+    font-size: 0.8rem;
+  }
+
+  .arrow-img {
+    width: 110px;
+  }
+}

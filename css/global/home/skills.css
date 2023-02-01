@@ -1,0 +1,158 @@
+#skills {
+  background: var(--primary-color);
+  height: 100vh;
+  scroll-margin-top: 4em;
+  min-height: 100%;
+}
+
+.skills-content {
+  gap: 20px;
+  max-width: 1200px;
+  padding: 80px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skills-paragraph {
+  font: 700 2.2rem/1.4 "Poppins", Arial, Helvetica, sans-serif;
+  color: var(--secondary-color);
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.skills-paragraph span {
+  color: var(--details-color);
+}
+
+.skills-side-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+.skills-side-text h2:last-child {
+  margin-top: 30px;
+}
+
+.skills-subtitle {
+  color: #e0e0e0;
+  font-size: 8rem;
+  word-break: break-all;
+  line-height: 1;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  cursor: default;
+}
+
+.my-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  color: var(--tertiary-color);
+  font: 700 1.5rem/1.2 "Poppins", Arial, Helvetica, sans-serif;
+  gap: 20px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.skill {
+  padding: 14px;
+  background: var(--secondary-color);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  transition: 4ms;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+}
+
+.skill:hover {
+  transform: scale(1.02);
+}
+
+.skill span {
+  font-size: 1.8rem;
+}
+.icon {
+  align-self: flex-start;
+  font-size: 2rem;
+}
+
+.skill-paragraph {
+  color: var(--primary-text-color);
+  font-weight: 600;
+  line-height: 1.1;
+  padding-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .skills-subtitle {
+    display: none;
+  }
+  .skills-content {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .skills-side-text {
+    display: none;
+  }
+
+  .my-skills {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  .skills-paragraph {
+    font-size: 2rem;
+    padding-bottom: 60px;
+  }
+
+  .skill span {
+    font-size: 1.6rem;
+  }
+
+  .my-skills {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .skills-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .skill span {
+    font-size: 1.4rem;
+  }
+
+  .my-skills {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-paragraph {
+    font-size: 1.6rem;
+  }
+
+  .skill span {
+    font-size: 1.2rem;
+  }
+
+  .my-skills {
+    font-size: 1rem;
+  }
+}

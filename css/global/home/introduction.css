@@ -104,6 +104,9 @@
 }
 
 @media (max-width: 400px) {
+  .introduction-content {
+    padding-top: 260px;
+  }
   .introduction-content .my-name {
     font-size: 1.5rem;
   }

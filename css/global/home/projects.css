@@ -25,6 +25,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projects-content li {

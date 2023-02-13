@@ -12,7 +12,7 @@
 
 .introduction-content {
   align-self: center;
-  padding-top: 330px;
+  padding-top: 390px;
   height: 100vh;
 }
 
@@ -89,6 +89,12 @@
   }
 }
 
+@media (max-height: 800px) {
+  .arrow-img-anime {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .introduction-content .my-name {
     font-size: 2rem;
@@ -98,23 +104,22 @@
     font-size: 1rem;
   }
 
-  .arrow-img {
+  .introduction-content {
+    padding-top: 240px;
+  }
+
+  .arrow-img-anime {
     width: 120px;
   }
 }
 
 @media (max-width: 400px) {
-  .introduction-content {
-    padding-top: 260px;
-  }
   .introduction-content .my-name {
     font-size: 1.5rem;
   }
-
   .introduction-content .my-role {
     font-size: 0.8rem;
   }
-
   .arrow-img {
     width: 110px;
   }

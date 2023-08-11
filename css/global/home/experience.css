@@ -4,29 +4,54 @@
   scroll-margin-top: 7em;
 }
 
-.experience {
+.experience-content {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.experience-img {
-  max-width: 500px;
-  height: 100%;
-  padding-bottom: 8px;
+.experience-content img {
+  width: 450px;
+  height: auto;
+}
+
+#logo-ambev {
+  padding-right: 40px;
+  padding-left: auto;
+}
+
+#logo-benner {
+  padding-left: 40px;
+  padding-right: auto;
 }
 
 .experience-years {
-  font: 500 1.5rem/1.1 "Prompt", sans-serif;
+  font: 500 2rem/1.1 "Prompt", sans-serif;
   color: #696969;
-  letter-spacing: 2px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  padding-top: 20px;
 }
+
 .experience-years span {
   font-weight: 700;
   font-size: 1.7rem;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  #logo-ambev {
+    padding-right: 0;
+    padding-left: auto;
+  }
+  
+  #logo-benner {
+    padding-left: 0;
+    padding-right: auto;
+  }
 }
 
 @media (max-width: 800px) {
@@ -38,7 +63,7 @@
   }
 
   .experience-years {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -51,7 +76,7 @@
   }
 
   .experience-years {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -65,6 +90,6 @@
   }
 
   .experience-years {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
